@@ -12,9 +12,9 @@ export default {
     }
 	],
 	plugins: [
-		nodeResolve({jsnext: true, module: true}),
+		nodeResolve({jsnext: true, module: true, preferBuiltins: true}),
 		commonjs(),
-    builtins({preferBuiltins: true}),
+    builtins(),
 	],
 	sourceMap: 'inline'
 };
